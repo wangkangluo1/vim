@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/m/.vim/c-support/codesnippets/gun'
+let g:netrw_dirhist_2='/home/m/.vim/c-support/codesnippets/stl/helloworld'
+let g:netrw_dirhist_3='/home/m/.vim/c-support/codesnippets/boost/helloworld'
+let g:netrw_dirhist_4='/home/m/.vim/c-support/codesnippets/boost/shujuleixingzhuanhuan'
+let g:netrw_dirhist_5='/home/m/.vim/c-support/codesnippets/boost/shujuleixingzhuanhuan/stringToInt'
+let g:netrw_dirhist_6='/home/m/.vim/c-support/codesnippets/glib/sprintf'
+let g:netrw_dirhist_7='/home/m/.emacs.d'
+let g:netrw_dirhist_8='/home/m/.emacs.d/auto-save-list'

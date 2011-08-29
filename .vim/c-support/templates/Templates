@@ -1,0 +1,26 @@
+$
+$ =============================================================
+$ ========== USER MACROS ======================================
+$ =============================================================
+$
+|AUTHOR|    = kangle.wang 
+|AUTHORREF| = mn
+|EMAIL|     = wangkangluo1@gmail.com
+|COMPANY|   = APE-TECH
+|COPYRIGHT| = Copyright (c) 2011, ape
+$
+$ =============================================================
+$ ========== FILE INCLUDES ====================================
+$ =============================================================
+$
+|includefile| = c.comments.template
+|includefile| = c.cpp.template
+|includefile| = c.idioms.template
+|includefile| = c.preprocessor.template
+|includefile| = c.statements.template
+
+$|includefile| = cpp.comments.template
+$|includefile| = cpp.cpp.template
+$|includefile| = cpp.idioms.template
+$|includefile| = cpp.preprocessor.template
+$|includefile| = cpp.statements.template
