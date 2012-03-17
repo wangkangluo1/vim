@@ -1,0 +1,2 @@
+ln -s /root/.wkl/vim/.vim /root/.viM
+ln -s /root/.wkl/vim/.vimrC /root/.vimrc
