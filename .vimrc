@@ -14,7 +14,7 @@ set shiftwidth=4
     "自动缩进的宽度。
 set pastetoggle=<F8>    
     "设置输入 :set paste, set nopaste快捷键
-filetype plugin on    
+filetype plugin  on    
     "开启插件
 
 
@@ -97,8 +97,9 @@ hi CursorColumn guibg=#333333
 " 自动补全   ==> 需要安装插件supertab
 "
 """""""""""""""""""""""""""""""
-let g:SuperTabRetainCompletionType=2
-let g:SuperTabDefaultCompletionType="<C-X><C-O>"
+set completeopt=longest,menu
+let g:SuperTabRetainCompletionType=0
+"let g:SuperTabDefaultCompletionType="<C-X><C-O>"
     "TAB键补全
 
 
@@ -121,15 +122,14 @@ let g:winManagerWindowLayout='FileExplorer'
 """""""""""""""""""""""""""""""
 set cscopequickfix=s-,c-,d-,i-,t-,e-
     "设定是否使用 quickfix 窗口来显示 cscope 结果
-nmap <C-_>s :cs find s <C-R>=expand("<cword>")<CR><CR>
-nmap <C-_>g :cs find g <C-R>=expand("<cword>")<CR><CR>
-nmap <C-_>c :cs find c <C-R>=expand("<cword>")<CR><CR>
-nmap <C-_>t :cs find t <C-R>=expand("<cword>")<CR><CR>
-nmap <C-_>e :cs find e <C-R>=expand("<cword>")<CR><CR>
-nmap <C-_>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
-nmap <C-_>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
-nmap <C-_>d :cs find d <C-R>=expand("<cword>")<CR><CR>
-
+nmap <C-@>s :cs find s <C-R>=expand("<cword>")<CR><CR>:copen<CR>
+nmap <C-@>g :cs find g <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@>c :cs find c <C-R>=expand("<cword>")<CR><CR>:copen<CR>
+nmap <C-@>t :cs find t <C-R>=expand("<cword>")<CR><CR>:copen<CR>
+nmap <C-@>e :cs find e <C-R>=expand("<cword>")<CR><CR>:copen<CR>
+nmap <C-@>f :cs find f <C-R>=expand("<cfile>")<CR><CR>:copen<CR>
+nmap <C-@>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>:copen<CR>
+nmap <C-@>d :cs find d <C-R>=expand("<cword>")<CR><CR>:copen<CR>
 
 
 
@@ -181,10 +181,11 @@ set nofoldenable
 
 
 
-
-
 set helplang=cn
 
 
 "高亮显示搜索的内容
 set hlsearch
+
+
+
