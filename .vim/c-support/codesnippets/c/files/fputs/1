@@ -33,12 +33,12 @@
 main ( int argc, char *argv[] )
 {
     FILE *stream;
-    stream = fopen("./test.db", "a+"); 
-    fseek(stream, 0, SEEK_SET); 
-    fprintf(stream, "hello world");
-    long lens = ftell(stream);
-    fseek(stream, lens - 5, SEEK_SET);
-    fprintf(stream, "hello world");
+    stream = fopen("test.db", "w+"); 
+       fputs("abcddaf", stream);
+
+       long len = ftell(stream);
+     fseek(stream, len, SEEK_SET); 
+       fputs("1232414213", stream);
 
     fclose(stream);
     return EXIT_SUCCESS;
