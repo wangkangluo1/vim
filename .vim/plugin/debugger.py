@@ -496,12 +496,12 @@ class DbgProtocol:
   def isconnected(self):
     return self.isconned
   def accept(self):
-    print 'waiting new connection in 5 sec.'
+    print 'waiting new connection in 30 sec.'
     serv = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     try:
       serv.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
       serv.bind(('', self.port))
-      serv.listen(5)
+      serv.listen(30)
       (self.sock, address) = serv.accept()
     except socket.timeout:
       serv.close()
@@ -611,7 +611,7 @@ class Debugger:
   #
   def __init__(self, port = 9000, debug = 0):
     """ initialize Debugger """
-    socket.setdefaulttimeout(5)
+    socket.setdefaulttimeout(30)
     self.port      = port
     self.debug     = debug
 
