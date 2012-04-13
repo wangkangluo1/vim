@@ -22,20 +22,20 @@ filetype plugin  on
 
 "快捷键
 "<f2>
-nnoremap <silent> <F2>  <C-W><C-W><CR>  
+"nnoremap <silent> <F2>  <C-W><C-W><CR>  
     "窗口切换快捷键F2
 "<f3>
-nnoremap <silent> <F3>  :A<CR>  
+"nnoremap <silent> <F3>  :A<CR>  
    "设置切换快捷键为F3
 "<f4>
 "nnoremap <silent> <F4> :q<CR>
-nnoremap <silent> <F4> \-n-r<CR>
+"nnoremap <silent> <F4> \-n-r<CR>
     "关闭当前窗口
 "<f5>
-nnoremap <silent> <F5> :e<CR>
+"nnoremap <silent> <F5> :e<CR>
     "文件更新
 "<f6>
-nnoremap <silent> <F6> :set nu!<CR>   
+"nnoremap <silent> <F6> :set nu!<CR>   
      "显示行号
 "<f6>
 "nnoremap <silent> <F6> :set foldenable!<CR>
@@ -43,9 +43,9 @@ nnoremap <silent> <F6> :set nu!<CR>
 
 
 "<f7>     
-nmap <F7> :WMToggle<cr>
+"nmap <F7> :WMToggle<cr>
     "正常模式下按键wm可打开窗口
-nnoremap <silent> <F8> <C-]><CR>
+"nnoremap <silent> <F8> <C-]><CR>
     "跳转到代码定义点
 
 "<f9>
