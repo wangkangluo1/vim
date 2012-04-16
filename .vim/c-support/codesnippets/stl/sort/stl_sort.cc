@@ -57,7 +57,7 @@ main ( int argc, char *argv[] )
     struct timeval tv1, tv2;
     double sec = 0;
     gettimeofday(&tv1, 0);
-    stream = fopen("../test.db", "r");
+    stream = fopen("test.db", "r");
 
     int lens = sizeof(long);
     long *ss = (long *)malloc(STR_LENS*lens);
