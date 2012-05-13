@@ -17,16 +17,14 @@
               Die("Failed to receive initial bytes from client");
             }
             /* Send bytes and check for more incoming data in loop */
+           
+           /* 
             while (received > 0) {
-              /* Send back received data */
               if (send(sock, buffer, received, 0) != received) {
                 Die("Failed to send bytes to client");
               }
-              /* Check for more data */
-              if ((received = recv(sock, buffer, BUFFSIZE, 0)) < 0) {
-                Die("Failed to receive additional bytes from client");
-              }
-            }
+              
+            }*/
             close(sock);
           }
 
