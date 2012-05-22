@@ -16,7 +16,7 @@ main ( int argc, char *argv[] )
     char a[10] = {0}, b[10] = {0};
     int i;
     FILE *fp;
-    fp=fopen("test.db","r");
+    fp=fopen("test.db","rw+");
     if(fp == NULL)
         exit(1);
     fscanf(fp, "%s %s", a, b);
