@@ -22,7 +22,7 @@
 #include	<stdio.h> 
 #include	<stdlib.h>
 #include	<string.h>
-#include        <sys/file.h>
+
 /* 
  * ===  FUNCTION  ======================================================================
  *         Name:  main
@@ -33,14 +33,12 @@
 main ( int argc, char *argv[] )
 {
     FILE *stream;
-    stream = fopen("./test.db", "rw+");
-    int fp = fileno(stream);
-    int stat = flock(fp, LOCK_EX);
+    stream = fopen("./test.db", "rw+"); 
     fseek(stream, 0, SEEK_SET); 
-    fprintf(stream, "hello world");
+    fprintf(stream, "btk");
     long lens = ftell(stream);
     fseek(stream, lens - 5, SEEK_SET);
-    fprintf(stream, "hello world");
+    fprintf(stream, "btk");
 
     fclose(stream);
     return EXIT_SUCCESS;
